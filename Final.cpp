@@ -1,3 +1,5 @@
+/*This is a program which simulates a delivery drone which takes random value and decide whether to continue with the delivery, delay it or cancel it based
+on the condition*/
 #include <iostream>
 #include <cstdlib>//for random event generator
 #include <ctime>//for srand time seed function
@@ -280,3 +282,4 @@ double total_time(double distance,bool heavy_load ) {
     }
     return loc_time;
 }
+
