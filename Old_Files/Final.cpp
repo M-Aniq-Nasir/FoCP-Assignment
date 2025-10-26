@@ -118,11 +118,11 @@ int main() {
                 
                 if (heavy)
                 {
-                    battery = battery - 4 * battery_consumption(distance, obstacle);
+                    battery = battery - 2 * battery_consumption(distance, obstacle);
                 }
 
                 else {
-                    battery = battery - 2 * battery_consumption(distance, obstacle);
+                    battery = battery -  battery_consumption(distance, obstacle);
                 }
 
                 /*taking into account when battery is depleted even though it has a very small chance*/
@@ -282,4 +282,5 @@ double total_time(double distance,bool heavy_load ) {
     }
     return loc_time;
 }
+
 
