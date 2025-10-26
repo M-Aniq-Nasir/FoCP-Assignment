@@ -112,7 +112,7 @@ int main() {
                 
                 cout << "\n\nPackage delivered successfully!\n";
                 l_time = total_time(distance, heavy);
-                cout << "Battery remaining: " << battery<<"\n";
+                cout << "Battery remaining: " << battery<<"%\n";
                 cout << "Total Time taken for delivery: " << l_time<<" minutes\n";
             }
 
@@ -251,3 +251,4 @@ double total_time(double distance,bool heavy_load ) {
     }
     return loc_time;
 }
+
